@@ -1,6 +1,6 @@
 from hypermap.aggregator.models import Layer
 from hypermap.aggrefator.models import Service
-collections import Counter 
+from collections import Counter 
 import csv
 
 
