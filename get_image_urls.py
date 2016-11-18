@@ -15,7 +15,7 @@ test_url = 'http://hh.worldmap.harvard.edu/registry/hypermap/layer'
 
 for i in range(len(list_uuid)):
     print "Progress {0} / {1}".format(i+1,len(list_uuid))
-    print "Percentage: {0} %".format((i+1)/len(list_uuid)*100.0)
+    print "Percentage: {0} %".format((i*1.0+1.0)/len(list_uuid)*100.0)
 
     response = requests.get('{0}/{1}/map/config'.format(test_url, list_uuid[i]))
     try:
